@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Manage Schedule
+An open-source scheduling application built with Next.js that simplifies booking meetings and appointments by integrating directly with your Google Calendar. Create custom events, share a link, and let others book a time that works for them.
 
-## Getting Started
+Live Demo: https://manage-schedule.vercel.app/
 
-First, run the development server:
+✨ Core Features
+📅 Create Custom Events: Define event details like name, duration, and description. Set your availability for each event type.
 
-```bash
+🔗 Shareable Booking Links: Generate a unique link for each event type to share with anyone you want to meet with.
+
+🤝 Seamless Booking for Invitees: Users visiting your link can see your available time slots and book a meeting in just a few clicks.
+
+🔄 Real-Time Google Calendar Integration: Once a time slot is booked, the event is automatically created in your Google Calendar, complete with event details and attendee information. This ensures your availability is always up-to-date and prevents double bookings.
+
+😎 Clean & Simple UI: A modern, intuitive interface for both the event creator and the person booking the meeting.
+
+🚀 Tech Stack
+Framework: Next.js
+
+Language: TypeScript
+
+Authentication: Clerk
+
+Database/ORM: Drizzle ORM with PostgreSQL
+
+Styling: Tailwind CSS & shadcn/ui
+
+API: Google Calendar API
+
+Deployment: Vercel
+
+🛠️ Getting Started: Running Locally
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+Prerequisites
+Node.js (v18.x or later recommended)
+
+npm or yarn
+
+Installation & Setup
+Clone the repository:
+
+git clone [https://github.com/](https://github.com/)<your-github-username>/<your-repo-name>.git
+cd <your-repo-name>
+
+Install dependencies:
+
+npm install
+
+Set up environment variables:
+Create a .env file in the root of the project by copying the example file.
+
+cp .env.example .env
+
+Next, populate the .env file with your credentials. You will need to create a Google Cloud project to get Google Calendar API keys and configure your authentication provider (e.g., Clerk).
+
+Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔑 Environment Variables
+You will need to provide the following variables in your .env file for the application to work correctly.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Database (e.g., from Vercel Postgres or Supabase)
+POSTGRES_URL="..."
 
-## Learn More
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISABLE_KEY="..."
+CLERK_SECRET_KEY="..."
+NEXT_PUBLIC_CLERK_SIGN_IN_URL="/sign-in"
+NEXT_PUBLIC_CLERK_SIGN_UP_URL="/sign-up"
 
-To learn more about Next.js, take a look at the following resources:
+# Google Calendar API
+# See [https://developers.google.com/workspace/guides/create-credentials](https://developers.google.com/workspace/guides/create-credentials)
+GOOGLE_CLIENT_ID="..."
+GOOGLE_CLIENT_SECRET="..."
+GOOGLE_REDIRECT_URI="http://localhost:3000/api/google/callback"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Public URL
+NEXT_PUBLIC_BASE_URL="http://localhost:3000"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Note: For production, ensure GOOGLE_REDIRECT_URI and NEXT_PUBLIC_BASE_URL are updated to your production domain.
 
-## Deploy on Vercel
+🚀 Deployment
+This project is optimized for deployment on Vercel.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Push your code to a GitHub repository.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Click the "Deploy with Vercel" button at the top of this README or import your repository directly in the Vercel dashboard.
+
+Add the required environment variables in the Vercel project settings.
+
+Vercel will automatically build and deploy your application.
+
+🤝 Contributing
+Contributions are welcome! If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+Push to the Branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for more details.
