@@ -62,7 +62,7 @@ export default async function HomePage() {
             size="lg"
             className="bg-zinc-800 text-white hover:bg-zinc-700"
           >
-            <SignInButton mode="modal" />
+            <SignInButton />
           </Button>
           <Button
             asChild
@@ -70,7 +70,7 @@ export default async function HomePage() {
             size="lg"
             className="bg-white text-black hover:bg-zinc-200"
           >
-            <SignUpButton mode="modal" />
+            <SignUpButton/>
           </Button>
         </div>
 
