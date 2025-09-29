@@ -40,7 +40,7 @@ npm or yarn
 Installation & Setup
 Clone the repository:
 
-git clone [https://github.com/](https://github.com/)<your-github-username>/<your-repo-name>.git
+git clone
 cd <your-repo-name>
 
 Install dependencies:
