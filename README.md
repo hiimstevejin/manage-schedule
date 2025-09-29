@@ -1,20 +1,20 @@
-Manage Schedule
-An open-source scheduling application built with Next.js that simplifies booking meetings and appointments by integrating directly with your Google Calendar. Create custom events, share a link, and let others book a time that works for them.
+# Manage Schedule
+## An open-source scheduling application built with Next.js that simplifies booking meetings and appointments by integrating directly with your Google Calendar. Create custom events, share a link, and let others book a time that works for them.
 
-Live Demo: https://manage-schedule.vercel.app/
+## Live Demo: https://manage-schedule.vercel.app/
 
-✨ Core Features
-📅 Create Custom Events: Define event details like name, duration, and description. Set your availability for each event type.
+# ✨ Core Features
+### 📅 Create Custom Events: Define event details like name, duration, and description. Set your availability for each event type.
 
-🔗 Shareable Booking Links: Generate a unique link for each event type to share with anyone you want to meet with.
+### 🔗 Shareable Booking Links: Generate a unique link for each event type to share with anyone you want to meet with.
 
-🤝 Seamless Booking for Invitees: Users visiting your link can see your available time slots and book a meeting in just a few clicks.
+### 🤝 Seamless Booking for Invitees: Users visiting your link can see your available time slots and book a meeting in just a few clicks.
 
-🔄 Real-Time Google Calendar Integration: Once a time slot is booked, the event is automatically created in your Google Calendar, complete with event details and attendee information. This ensures your availability is always up-to-date and prevents double bookings.
+### 🔄 Real-Time Google Calendar Integration: Once a time slot is booked, the event is automatically created in your Google Calendar, complete with event details and attendee information. This ensures your availability is always up-to-date and prevents double bookings.
 
-😎 Clean & Simple UI: A modern, intuitive interface for both the event creator and the person booking the meeting.
+### 😎 Clean & Simple UI: A modern, intuitive interface for both the event creator and the person booking the meeting.
 
-🚀 Tech Stack
+# 🚀 Tech Stack
 Framework: Next.js
 
 Language: TypeScript
@@ -29,7 +29,7 @@ API: Google Calendar API
 
 Deployment: Vercel
 
-🛠️ Getting Started: Running Locally
+# 🛠️ Getting Started: Running Locally
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 Prerequisites
@@ -60,7 +60,7 @@ npm run dev
 
 Open http://localhost:3000 with your browser to see the result.
 
-🔑 Environment Variables
+# 🔑 Environment Variables
 You will need to provide the following variables in your .env file for the application to work correctly.
 
 # Database (e.g., from Vercel Postgres or Supabase)
@@ -83,7 +83,7 @@ NEXT_PUBLIC_BASE_URL="http://localhost:3000"
 
 Note: For production, ensure GOOGLE_REDIRECT_URI and NEXT_PUBLIC_BASE_URL are updated to your production domain.
 
-🚀 Deployment
+# 🚀 Deployment
 This project is optimized for deployment on Vercel.
 
 Push your code to a GitHub repository.
@@ -94,7 +94,7 @@ Add the required environment variables in the Vercel project settings.
 
 Vercel will automatically build and deploy your application.
 
-🤝 Contributing
+# 🤝 Contributing
 Contributions are welcome! If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
 Fork the Project
